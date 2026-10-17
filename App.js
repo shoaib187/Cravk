@@ -1,11 +1,13 @@
-
 import React from 'react'
-import { Text, View } from 'react-native';
+import Onboarding from './src/screens/onboarding/onboarding';
+import Welcome from './src/screens/welcomeScreen/welcomeScreen';
+import Locations from './src/screens/locations/locations';
+import Home from './src/screens/home/home';
 
 export default function App() {
   return (
-    <View className='bg-red-400 flex-1 justify-center items-center'>
-      <Text>fdasfasf</Text>
-    </View>
+    // <Locations/>
+    // <Welcome/>
+    <Home/>
   )
 }

@@ -1,6 +1,8 @@
+
 export const Fonts = {
-  RalewayBold: 'Raleway-Bold',
-  RalewaySemiBold: 'Raleway-SemiBold',
-  RalewayMedium: 'Raleway-Medium',
-  RalewayRegular: 'Raleway-Regular',
+  LatoBold: 'Lato-Bold',
+  LatoItalic: 'Lato-Italic',
+  LatoLight: 'Lato-Light',
+  LatoLightItalic: 'Lato-LightItalic',
+  LatoRegular: 'Lato-Regular',
 };

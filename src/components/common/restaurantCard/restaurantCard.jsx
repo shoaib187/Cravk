@@ -7,7 +7,9 @@ import {
   FontSize,
   Spacing,
   Radius,
+  Responsive,
 } from '../../../components/constants/responsive/responsive';
+import RatingBadge from '../ratingBadge/ratingBadge';
 
 export default function RestaurantCard({
   image,
@@ -63,7 +65,7 @@ export default function RestaurantCard({
             <View style={styles.metaItem}>
               <Ionicons
                 name="time-outline"
-                size={11}
+                size={Responsive.RFValue(11)}
                 color={Colors.dark}
                 style={styles.metaIcon}
               />
@@ -73,7 +75,7 @@ export default function RestaurantCard({
             <View style={styles.metaItem}>
               <Ionicons
                 name="bicycle-outline"
-                size={11}
+                size={Responsive.RFValue(11)}
                 color={Colors.dark}
                 style={styles.metaIcon}
               />
@@ -87,15 +89,7 @@ export default function RestaurantCard({
 
       {/* Right side */}
       <View style={styles.rightSection}>
-        <View style={styles.ratingBadge}>
-          <Ionicons
-            name="star"
-            size={10}
-            color={Colors.primary}
-            style={styles.metaIcon}
-          />
-          <Text style={styles.ratingText}>{rating}</Text>
-        </View>
+        <RatingBadge style={{right:0}} rating={rating} />
 
         <View style={styles.arrowButton}>
           <Ionicons name="arrow-forward" size={16} color="#FFFFFF" />
@@ -245,5 +239,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
   },
 });

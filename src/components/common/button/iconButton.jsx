@@ -2,6 +2,7 @@ import React from 'react';
 import { TouchableOpacity, View, StyleSheet } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import { Colors } from '../../constants/color/color';
+import { Responsive } from '../../constants/responsive/responsive';
 
 export default function IconButton({
   // Icon
@@ -16,7 +17,7 @@ export default function IconButton({
   disabled = false,
 
   // Style
-  size = 40,
+  size = 36,
   variant = 'light', // 'light' | 'dark' | 'ghost' | 'primary'
   showBadge = false,
   badgeColor = Colors.primary,
@@ -46,9 +47,9 @@ export default function IconButton({
       style={[
         styles.base,
         {
-          width: size,
-          height: size,
-          borderRadius: size / 2,
+          width: Responsive.RFValue(size),
+          height: Responsive.RFValue(size),
+          borderRadius: Responsive.RFValue(size / 2),
         },
         variantStyles,
         disabled && styles.disabled,

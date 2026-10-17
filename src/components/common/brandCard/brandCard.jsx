@@ -4,6 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Fonts } from '../../constants/fonts/font';
 import { Colors } from '../../constants/color/color';
 import { FontSize, Spacing, Radius } from '../../constants/responsive/responsive';
+import RatingBadge from '../ratingBadge/ratingBadge';
 
 export default function BrandCard({
   logo,
@@ -25,22 +26,18 @@ export default function BrandCard({
           />
         </View>
 
-        {/* Info */}
         <View style={styles.info}>
-          {/* Tagline */}
           <View style={styles.taglineRow}>
             <Text style={styles.taglineIcon}>{taglineIcon}</Text>
             <Text style={styles.taglineText} numberOfLines={1}>
-              {tagline}
+              {tagline?.slice(0, 16)}
             </Text>
           </View>
 
-          {/* Name */}
           <Text style={styles.name} numberOfLines={1}>
             {name}
           </Text>
 
-          {/* Time */}
           <View style={styles.timeRow}>
             <View style={styles.timeIconWrap}>
               <Ionicons name="time-outline" size={10} color="#FFFFFF" />
@@ -50,16 +47,7 @@ export default function BrandCard({
         </View>
       </View>
 
-      {/* Rating badge (top-right) */}
-      <View style={styles.ratingBadge}>
-        <Ionicons
-          name="star"
-          size={10}
-          color="#F59E0B"
-          style={styles.ratingStar}
-        />
-        <Text style={styles.ratingText}>{rating}</Text>
-      </View>
+      <RatingBadge rating={rating} />
     </TouchableOpacity>
   );
 }
@@ -152,7 +140,7 @@ borderRadius: Radius.xl,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: Spacing.sm,
-    paddingVertical: Spacing.xs - 1,
+    paddingVertical: Spacing.sm-2,
     borderRadius: Radius.xl * 2,
     backgroundColor: Colors.dark,
   },

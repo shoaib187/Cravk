@@ -7,33 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0907F42CEBA54449992C41CF /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Cravk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Cravk.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1CC1DCF902744D6BBFCBDBF4 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */; };
+		3E9519AF29454093B034E952 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		0907F42CEBA54449992C41CF /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */; };
-		3E9519AF29454093B034E952 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */; };
-		1CC1DCF902744D6BBFCBDBF4 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */; };
-		ECDC6BA89FF24C908E008560 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */; };
 		C26F2C0DC53B45D4BAD4E807 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD1BEC4B04144CB88175B26 /* Lato-Light.ttf */; };
+		D5260F6A20B81B122570C615 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		ECDC6BA89FF24C908E008560 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* Cravk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cravk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Cravk/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Cravk/Info.plist"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Cravk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cravk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Cravk/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Cravk/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Cravk/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Cravk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cravk.debug.xcconfig"; path = "Target Support Files/Pods-Cravk/Pods-Cravk.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Cravk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cravk.release.xcconfig"; path = "Target Support Files/Pods-Cravk/Pods-Cravk.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Cravk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cravk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Cravk/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Cravk/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Cravk/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		8CD1BEC4B04144CB88175B26 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */ = {isa = PBXFileReference; name = "Lato-Italic.ttf"; path = "../assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8CD1BEC4B04144CB88175B26 /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
-			name = "Cravk";
+			name = Cravk;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -67,6 +68,19 @@
 				5DCACB8F33CDC322A6C60F78 /* libPods-Cravk.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D5DAD09468647ED90D8B731 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */,
+				C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */,
+				D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */,
+				C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */,
+				8CD1BEC4B04144CB88175B26 /* Lato-Light.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -108,19 +122,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7D5DAD09468647ED90D8B731 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				8987F9BD6F524FB8861DFEA1 /* Lato-Italic.ttf */,
-				C6B91E5FD8524767AEBBCDC0 /* Lato-LightItalic.ttf */,
-				D6D0B967842849028A1B25D1 /* Lato-Bold.ttf */,
-				C034A0F984FD42D6AEA0BFC4 /* Lato-Regular.ttf */,
-				8CD1BEC4B04144CB88175B26 /* Lato-Light.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,8 +141,8 @@
 			);
 			dependencies = (
 			);
-			name = "Cravk";
-			productName = "Cravk";
+			name = Cravk;
+			productName = Cravk;
 			productReference = 13B07F961A680F5B00A75B9A /* Cravk.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -188,6 +189,7 @@
 				1CC1DCF902744D6BBFCBDBF4 /* Lato-Bold.ttf in Resources */,
 				ECDC6BA89FF24C908E008560 /* Lato-Regular.ttf in Resources */,
 				C26F2C0DC53B45D4BAD4E807 /* Lato-Light.ttf in Resources */,
+				D5260F6A20B81B122570C615 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +290,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Cravk/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Cravk";
+				INFOPLIST_FILE = Cravk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cravk;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +304,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Cravk";
+				PRODUCT_NAME = Cravk;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -318,8 +320,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "Cravk/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Cravk";
+				INFOPLIST_FILE = Cravk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cravk;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +334,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Cravk";
+				PRODUCT_NAME = Cravk;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,6 +403,10 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -408,8 +414,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
 				);
+				PODFILE_DIR = "$(SRCROOT)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -466,6 +477,10 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
+				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -473,8 +488,12 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+					"-DRCT_REMOVE_LEGACY_ARCH=1",
 				);
+				PODFILE_DIR = "$(SRCROOT)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

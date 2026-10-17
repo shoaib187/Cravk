@@ -77,7 +77,7 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState('Food');
 
   return (
-    <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
+    <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" />
 
       <ScrollView
@@ -138,11 +138,10 @@ export default function Home() {
 
         {/* Big brands */}
         <View style={styles.section}>
-                  <SectionHeader title="Big brands near you" onActionPress={() => { }} />
-                  <BrandsSection  />
+          <SectionHeader title="Big brands near you" onActionPress={() => { }} />
+          <BrandsSection  />
         </View>
 
-        {/* Featured restaurants */}
         <View style={styles.section}>
           <SectionHeader
             title="Featured Restaurants"

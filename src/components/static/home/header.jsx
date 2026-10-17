@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
     maxWidth: '65%',
   },
   addressIconCircle: {
-    width: 36,
-    height: 36,
+    width: Responsive.RFValue(36),
+    height: Responsive.RFValue(36),
     borderRadius: Radius.xl*3,
     backgroundColor: Colors.white,
     alignItems: 'center',

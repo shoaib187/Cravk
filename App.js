@@ -13,3 +13,5 @@ export default function App() {
     <Search/>
   )
 }
+
+// version 1.0.0 commited by Mubashir Munir

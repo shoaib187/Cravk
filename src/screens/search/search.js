@@ -62,17 +62,16 @@ export default function Search({ navigation }) {
   const [activeCategory, setActiveCategory] = useState(null);
 
   return (
-    <SafeAreaView style={styles.container} edges={['top']}>
+    <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
       <StatusBar barStyle="dark-content" />
 
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
       >
-        {/* ── 1. Search ── */}
         <View style={styles.searchBox}>
           <View style={styles.searchIconCircle}>
-            <Feather name="search" size={16} color={Colors.dark} />
+            <Feather name="search" size={Responsive.RFValue(14)} color={Colors.dark} />
           </View>
           <TextInput
             value={search}
@@ -150,7 +149,7 @@ export default function Search({ navigation }) {
               >
                 <View style={styles.categoryIconWrap}>
                   <Image
-                    source={{ uri: cat.icon }}
+                  source={{ uri: cat.icon }}
                     style={styles.categoryIcon}
                     resizeMode="cover"
                   />
@@ -301,7 +300,7 @@ const styles = StyleSheet.create({
   bannerTitleBig: {
     fontSize: FontSize.xxl,
     fontFamily: Fonts.LatoBold,
-    color: '#FFFFFF',
+    color: Colors.background,
   },
   bannerAccent: {
     color: Colors.primary,

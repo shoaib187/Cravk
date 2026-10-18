@@ -21,6 +21,7 @@ import {
   FontSize,
   Spacing,
   Radius,
+  Responsive,
 } from '../../components/constants/responsive/responsive';
 
 const { width } = Dimensions.get('window');
@@ -156,24 +157,6 @@ export default function ProfileScreen({ navigation }) {
           </TouchableOpacity>
         </View>
       </ScrollView>
-
-      {/* ── Floating tab bar ── */}
-      <SafeAreaView style={styles.tabBarSafeArea} edges={['bottom']}>
-        <View style={styles.tabBar}>
-          <TouchableOpacity style={styles.tabItem}>
-            <Ionicons name="home-outline" size={20} color="#999999" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabItem}>
-            <Ionicons name="storefront-outline" size={20} color="#999999" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabItem}>
-            <Ionicons name="git-network-outline" size={20} color="#999999" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.tabCenter}>
-            <Ionicons name="person" size={20} color="#FFFFFF" />
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
     </SafeAreaView>
   );
 }
@@ -186,7 +169,7 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingHorizontal: Spacing.md,
     paddingTop: Spacing.sm,
-    paddingBottom: 140, // clears the floating tab bar
+    paddingBottom: Responsive.RFValue(140),
   },
 
   // ── Top bar ──
@@ -199,19 +182,12 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.sm + 2,
   },
   iconButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: Responsive.RFValue(40),
+    height: Responsive.RFValue(40),
+    borderRadius: Responsive.RFValue(20),
     backgroundColor: '#FFFFFF',
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 6,
-    elevation: 2,
   },
   screenTitle: {
     fontSize: FontSize.lg,
@@ -222,19 +198,12 @@ const styles = StyleSheet.create({
   // ── Profile card ──
   profileCard: {
     backgroundColor: '#FFFFFF',
-    borderRadius: Radius.xl * 1.6,
+    borderRadius: Radius.xl,
     padding: Spacing.md,
     marginBottom: Spacing.md,
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.06,
-    shadowRadius: 10,
-    elevation: 3,
   },
   profileLeft: {
     flexDirection: 'row',
@@ -268,12 +237,9 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   editButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: Colors.background,
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
+    width: Responsive.RFValue(30),
+    height: Responsive.RFValue(30),
+    borderRadius: Responsive.RFValue(18),
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -281,16 +247,9 @@ const styles = StyleSheet.create({
   // ── Section cards ──
   sectionCard: {
     backgroundColor: '#FFFFFF',
-    borderRadius: Radius.xl * 1.6,
-    padding: Spacing.md,
+    borderRadius: Radius.xl,
+    padding: Spacing.sm,
     marginBottom: Spacing.md,
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.06,
-    shadowRadius: 10,
-    elevation: 3,
   },
   sectionTitle: {
     fontSize: FontSize.md,
@@ -300,7 +259,7 @@ const styles = StyleSheet.create({
   },
   menuGroup: {
     backgroundColor: Colors.background,
-    borderRadius: Radius.lg,
+    borderRadius: Radius.xl,
     paddingHorizontal: Spacing.xs,
     paddingVertical: Spacing.xs - 1,
   },
@@ -322,12 +281,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   menuIconCircle: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: Responsive.RFValue(32),
+    height: Responsive.RFValue(32),
+    borderRadius: Responsive.RFValue(16),
     backgroundColor: '#FFFFFF',
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: Spacing.sm + 2,
@@ -345,17 +302,10 @@ const styles = StyleSheet.create({
 
   // ── Logout ──
   logoutCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: Radius.xl * 1.6,
-    padding: Spacing.xs,
+    backgroundColor: Colors.white,
+    borderRadius: Radius.xl,
+    padding: Spacing.sm,
     marginBottom: Spacing.lg,
-    borderWidth: 1,
-    borderColor: '#F0F0F2',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.06,
-    shadowRadius: 10,
-    elevation: 3,
   },
   logoutButton: {
     flexDirection: 'row',
@@ -364,9 +314,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.sm,
   },
   logoutIconCircle: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: Responsive.RFValue(36),
+    height: Responsive.RFValue(36),
+    borderRadius: Responsive.RFValue(18),
     backgroundColor: Colors.background,
     alignItems: 'center',
     justifyContent: 'center',
@@ -378,48 +328,4 @@ const styles = StyleSheet.create({
     color: Colors.dark,
   },
 
-  // ── Floating tab bar ──
-  tabBarSafeArea: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    alignItems: 'center',
-    paddingBottom: Spacing.sm,
-  },
-  tabBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    backgroundColor: Colors.dark,
-    borderRadius: Radius.xl * 3,
-    paddingHorizontal: Spacing.xs,
-    paddingVertical: Spacing.xs,
-    width: width * 0.75,
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.25,
-    shadowRadius: 12,
-    elevation: 8,
-  },
-  tabItem: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tabCenter: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: Colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 5,
-  },
 });

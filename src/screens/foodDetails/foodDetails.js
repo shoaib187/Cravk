@@ -22,6 +22,7 @@ import {
   Spacing,
   Radius,
 } from '../../components/constants/responsive/responsive';
+import BottomAction from '../../components/common/bottomAction/bottomAction';
 
 const { height } = Dimensions.get('window');
 
@@ -239,25 +240,7 @@ export default function FoodDetailScreen({ navigation }) {
           </ScrollView>
         </View>
       </ScrollView>
-
-      {/* ── Fixed bottom bar ── */}
-      <SafeAreaView style={styles.bottomBar} edges={['bottom']}>
-        <View style={styles.bottomBarContent}>
-          <TouchableOpacity
-            style={styles.addToCartButton}
-            activeOpacity={0.85}
-          >
-            <Text style={styles.addToCartText}>Add to Cart</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.orderButton}
-            activeOpacity={0.85}
-          >
-            <Text style={styles.orderText}>Order</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
+      <BottomAction/>
     </View>
   );
 }
@@ -268,7 +251,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.background,
   },
   scrollContent: {
-    paddingBottom: 120, // clears the fixed bottom bar
+    // paddingBottom: 120, // clears the fixed bottom bar
   },
 
   // ── Hero ──

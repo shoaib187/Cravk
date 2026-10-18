@@ -1,31 +1,33 @@
+
+import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+
+import HomeScreen from '../../screens/home/home';
+import StoresScreen from '../../screens/stores/stores';
+import ActivityScreen from '../../screens/activity/activity';
+import ProfileScreen from '../../screens/profile/profile';
+
+import TabBar from '../../components/common/tabbar/tabbar';
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigation = () => {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          let iconName;
-
-          if (route.name === 'Home') {
-            iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'Profile') {
-            iconName = focused ? 'person' : 'person-outline';
-          }
-
-          return <Ionicons name={iconName} size={size} color={color} />;
+      tabBar={(props) => <TabBar {...props} />}
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          display: 'none',
         },
-        tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: 'gray',
-      })}
+      }}
     >
-      {/* <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} /> */}
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Stores" component={StoresScreen} />
+      <Tab.Screen name="Activity" component={ActivityScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
 
-export { TabNavigation };
+export default TabNavigation;

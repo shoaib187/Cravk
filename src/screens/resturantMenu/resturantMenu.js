@@ -255,31 +255,6 @@ export default function RestaurantMenuScreen({ navigation }) {
           ))}
         </View>
       </ScrollView>
-
-      {/* ── Floating tab bar ── */}
-      <SafeAreaView style={styles.tabBarSafeArea} edges={['bottom']}>
-        <View style={styles.tabBar}>
-          {tabs.map((tab, i) => {
-            const isCenter = i === 1;
-            return (
-              <TouchableOpacity
-                key={tab.name}
-                activeOpacity={0.85}
-                style={[
-                  isCenter ? styles.tabCenter : styles.tabItem,
-                  isCenter && styles.tabItemCenterSpaced,
-                ]}
-              >
-                <Ionicons
-                  name={tab.name}
-                  size={20}
-                  color={tab.active ? '#FFFFFF' : '#999999'}
-                />
-              </TouchableOpacity>
-            );
-          })}
-        </View>
-      </SafeAreaView>
     </SafeAreaView>
   );
 }
@@ -582,51 +557,4 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
 
-  // ── Floating tab bar ──
-  tabBarSafeArea: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    alignItems: 'center',
-    paddingBottom: Spacing.sm,
-  },
-  tabBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    backgroundColor: Colors.dark,
-    borderRadius: Radius.xl * 3,
-    paddingHorizontal: Spacing.xs,
-    paddingVertical: Spacing.xs,
-    width: width * 0.75,
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.25,
-    shadowRadius: 12,
-    elevation: 8,
-  },
-  tabItem: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tabCenter: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: Colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: Colors.dark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 5,
-  },
-  tabItemCenterSpaced: {
-    marginHorizontal: Spacing.xs,
-  },
 });
